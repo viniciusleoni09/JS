@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATIVIDADE DE MENSSAGEM</title>
+
+    <style>
+        button{
+            padding: 20px;
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>imformações</h1>
+    <button onclick="inicio()">botão 1</button>
+    <script>
+        function inicio(){
+            let nome = window.prompt('nome do visitante');
+            let age = window.prompt('qual sua idade?')
+            window.alert(`ola, ${nome} ! Seja bem-vindo, você tem ${age} anos`)
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>atividade de calculadora de troco</title>
+</head>
+<body>
+    <h1>calculadora de troco</h1>
+    <button onclick="calcularTroco()">Calcular Troco</button>
+<script>
+    function calculadoraTroco(){
+        let valorproduto = parseFloat(window.prompt('digite o valor do produto:'));
+        let valorpago = parseFloat(window.prompt('digite o valor pago:'));
+        let troco = valorpago-valorproduto;
+        window.alert(`O troco a ser dado e de R$${troco.toFixed(2)}`);
+        
+    }
+</script>
+</body>
+</html>
