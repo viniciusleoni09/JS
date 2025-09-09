@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contador de cliques</title>
+</head>
+<body>
+    <button id="btnClique">Clique aqui</button>
+    <p id="contador">O botão foi clicado 0 vezes.</p>
+
+    <script>
+        let totalCliques = 0;
+        const btn = document.getElementById('btnClique');
+        const contador = document.getElementById('contador');
+
+        btn.addEventListener('click', function() {
+            totalCliques++;
+            contador.textContent = `O botão foi clicado ${totalCliques} vezes.`;
+        });
+    </script>
+</body>
+</html>

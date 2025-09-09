@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>condicionais</h1>
+    <button onclick="verificar()">verificar</button>
+    <p id="resultado"></p>
+    <script>
+        function verificar() {
+            let nota = window.prompet('qual sua nota');
+            let resposta = document.getElementById('resultado');
+             if (nota>=7){
+              resposta.innerHTML = 'você esta aprvado';
+             } else{
+                resposta.innerHTML= 'você esta reprovado';
+             }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vericação de marioridade</title>
+</head>
+<body>
+    <script>
+        const idade = prompt("Qual é a sua idade?");
+        if (idade !== null && idade !== "") {
+            const idadeNum = Number(idade);
+            if (!isNaN(idadeNum)) {
+                if (idadeNum >= 18) {
+                    document.body.innerHTML += "<h2>Você é maior de idade.</h2>";
+                } else {
+                    document.body.innerHTML += "<h2>Você é menor de idade.</h2>";
+                }
+            } else {
+                document.body.innerHTML += "<h2>Por favor, informe uma idade válida.</h2>";
+            }
+        } else {
+            document.body.innerHTML += "<h2>Idade não informada.</h2>";
+        }
+    </script>
+</body>
+</html>
