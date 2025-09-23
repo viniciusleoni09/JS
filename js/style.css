@@ -1,0 +1,24 @@
+body {
+   font-family: arial, sans-serif;
+   background-color: #282c34;
+   color: #f0f0f0;
+   display: flex;
+   justify-content:  center;
+   align-items: center;
+   min-height: 100vh;
+margin: 0;
+padding: 20px;
+box-sizing: border-box;
+}
+
+.container {
+  background-color: #3a3f47;
+  padding: 30px, 40px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 5);
+  text-align: center;
+  max-width: 500px;
+  width: 100%;
+
+}
+
+ 
