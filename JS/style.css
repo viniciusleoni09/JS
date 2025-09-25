@@ -1,0 +1,83 @@
+body {
+   font-family: arial, sans-serif;
+   background-color: #282c34;
+   color: #f0f0f0;
+   display: flex;
+   justify-content:  center;
+   align-items: center;
+   min-height: 100vh;
+margin: 0;
+padding: 20px;
+box-sizing: border-box;
+}
+
+.container {
+  background-color: #3a3f47;
+  padding: 30px, 40px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 5);
+  text-align: center;
+  max-width: 500px;
+  width: 100%;
+
+}
+
+input[type="number"] {
+  padding: 12px 15px;
+  border: 2px solid #61dafb;
+  border-radius: 5px;
+  font-size: 1.1em;
+  width: 150px;
+  text-align: center;
+  background-color: #444a54;
+  color: #f0f0f0;
+  outline: none;
+}
+
+input[type="number"]:focus {
+border-color: #21a1f1;  
+}
+
+.resltado-area p {
+  font-size:1.05em;
+  margin-top: 15px;
+  padding: 5px;
+  border-radius: 3px;
+}
+
+.mensagem {
+  font-weight: bold;
+  color: #f0f0f0;
+}
+
+.palpites-anteriores {
+  font-size: 0.9em;
+  color: #bbb;
+}
+
+.dica {
+  font-style: italic;
+  color: #ffeb3b;
+}
+
+.hidden {
+  display: none;
+}
+
+@keyframes flashGreen {
+  0% { background-color:  transparent;}
+  50% { background-color: rgba(76, 175, 80, 0.3);}
+  100% {background-color: transparent;}
+}
+@keyframes flashRed {
+  0% { background-color: transparent;}
+  50% { background-color: rgba(244, 67, 54, 0.3);}
+}
+
+.flash-green {
+  animation: flashGreen 0.5 ease-in-out;
+}
+.flash-red {
+  animation: flashRed 0.5 ease-in-out;
+}
+
+
